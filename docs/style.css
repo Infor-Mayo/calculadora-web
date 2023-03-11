@@ -1,0 +1,68 @@
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+	animation: changeBgColor 20s linear infinite;
+	display: flex; /* Mostrar elementos como caja flexible */
+  	align-items: center;
+}
+
+@keyframes changeBgColor {
+	0% {
+		background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+	}
+	50% {
+		background: linear-gradient(to right, #f12711, #f5af19);
+	}
+	100% {
+		background: linear-gradient(to right, #f5af19, #f12711);
+	}
+}
+
+.calculator {
+	width: 50%; /* Ancho del contenedor */
+  	margin: auto; /* Establecer margen automático */
+	margin: 50px auto;
+	padding: 10px;
+	width: 280px;
+	background: #eee;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.screen {
+	margin: 5px 0;
+	padding: 5px;
+	background: #fff;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+}
+.text {
+	width: 100%; /* Establecer ancho del 100% */
+  	height: 100%; /* Establecer altura del 100% */
+  	box-sizing: border-box; /* Incluir borde y relleno en las medidas del elemento */
+  	font-size: 16px; /* Tamaño de fuente para el cuadro de texto */
+}
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+	margin-top: 10px;
+}
+
+.buttons button {
+	background: #ccc;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.buttons button:hover {
+	background: #bbb;
+	color: #fff;
+}
+
